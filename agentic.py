@@ -96,6 +96,6 @@ def create_agent_executor(vectorstore_service: VectorStoreService):
 
     # 4. Create the Agent
     agent = create_openai_tools_agent(llm, tools, prompt)
-    agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
+    agent_executor = AgentExecutor(name="Single Dev Agent", agent=agent, tools=tools, verbose=False)
     
     return agent_executor

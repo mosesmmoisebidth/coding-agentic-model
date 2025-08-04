@@ -1,5 +1,5 @@
 # team/state.py
-from typing import TypedDict, List, Optional
+from typing import TypedDict, List
 class TeamState(TypedDict):
     """
     Represents the shared state of the AI development team.
